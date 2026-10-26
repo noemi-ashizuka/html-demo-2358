@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #3A3754;
+  font-size: 40px;
+}
+
+h2 {
+  color: #768AC0; /* color is about text color */
+  letter-spacing: 2px;
+}
+
+i {
+  color: #3A3754;
+  font-size: 24px;
+}
+
+i:hover {
+  color: #768AC0;
+  transition: .3s;
+}
+
+.main-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.card-white {
+  background: white;                         /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin: 16px;
+  text-align: center;
+}
+
+.img-medium {
+  width: 250px;
+  height: 250px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  object-position: center;
+}
+
+.list-horizontal {
+  padding: 0;
+}
+
+.list-horizontal li {
+  display: inline-block;
+  margin: 16px;
+}
+
+.btn-gray {
+  background-color: #b5b6b6;
+  padding: 8px 24px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.btn-gray:hover {
+  background-color: white;
+  color: #4F5B93;
+  border: 1px solid #4F5B93;
+  box-shadow: 0 0 20px 16px #4F5B93;
+  transition: 0.5s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 8px 6px #777bb473;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 10px 8px #4F5B93;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 8px 6px #777bb473;
+    }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .main-container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .main-container {
+    width: 500px;
+  }
+
+  /* .img-medium {
+    width: 180px;
+  } */
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .main-container {
+    width: 300px;
+  }
+}

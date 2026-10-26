@@ -1,0 +1,88 @@
+<h1>&lt;?php echo "Hello, World"; ?&gt; 🐘</h1>
+<img src="images/elephant.png" alt="The PHP elephpant mascot" class="img-medium">
+<p>Hello, friends! I am PHP, the programming language that is "dead" every year since 2005 and still runs 77% of the web. Join me as we journey through the colorful world of <code>$dollar</code> signs, mysterious warnings, and 3,000 inconsistent function names.</p>
+<a href="https://www.php.net/" class="btn-gray">Deploy on a Friday</a>
+ 
+<h2>"PHP2Shell? Never Heard of Her."</h2>
+<p>Fresh from the oven (October 2026): <code>CVE-2026-109618</code> and <code>CVE-2026-109619</code>, two critical bugs that let strangers run code on your server without even logging in. Attackers tried them four days before the announcement. Very punctual!</p>
+<p>Please update to 8.5.12, 8.4.27, 8.3.36 or 8.2.35. Yes, right now. Yes, even on Friday.</p>
+<a href="https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching" class="btn-gray">Read the CISA alert</a>
+
+<h2>"Everything Is Fine, My Developers!"</h2>
+<p>No matter what you're building, I'll make sure it works somehow. Is "0" == false? Yes. Is "abc" == 0? Used to be. Let's explore new bugs together!</p>
+
+<h2>"Discover the Magic of strpos / str_replace"</h2>
+<p>Needle, haystack... or haystack, needle? Every function has its own argument order. I'll guide you to hidden gems like <code>array_walk</code>, <code>nl2br</code> and a very confident <code>@</code> to silence errors.</p>
+
+<h2>"Code Smart, Code Happy"</h2> 
+<p>From the first <code>&lt;?php</code> tag to the evening production incident, I'll show you tips and tricks: mix HTML, SQL and logic in a single file, and never look back.</p>
+
+<h2>Interests:</h2>
+<p>When I'm not powering WordPress, I love shared hosting, FTP uploads straight to production, and dreaming up new frameworks. Laravel says hi.</p>
+
+
+Fontawesome icons
+
+<li><a href="#"><i class="fa-brands fa-php"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-wordpress"></i></a></li>
+<li><a href="#"><i class="fa-solid fa-bug"></i></a></li>
+
+Colors: 
+purple #4F5B93
+light purple (h1) #777BB4
+light purple animation #777bb473
+light gray button #b5b6b6
+page background #d7d8d8
+text #1a1a1a
+inline code background #eeeef6
+
+
+Fonts:
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono&display=swap');
+
+h1, h2, h3 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4F5B93;
+}
+
+
+body font
+font-family: "Space Mono", monospace;
+font-weight: 400;
+font-style: normal;
+
+BG gradient (CSS gradients)
+
+background: rgb(60,60,60);
+background: linear-gradient(0deg, rgba(60,60,60,1) 0%, rgba(97,97,97,1) 35%, rgba(228,228,228,1) 100%);
+
+
+Button animation
+
+.btn-gray:hover {
+  background-color: white;
+  color: #4F5B93;
+  border: 1px solid #4F5B93;
+  box-shadow: 0 0 20px 16px #4F5B93;
+  transition: 0.5s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 8px 6px #777bb473;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 10px 8px #4F5B93;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 8px 6px #777bb473;
+    }
+}
